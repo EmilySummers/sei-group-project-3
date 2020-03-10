@@ -26,7 +26,6 @@ class UserReview extends React.Component {
   render() {
     if (!this.state.user.name) return null
     const { name, _id, image, avgRating, ratingsCount } = this.state.user
-    console.log(this.state.user)
     return (
       <>
         <section className="hero is-fullheight-with-navbar">

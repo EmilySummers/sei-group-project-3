@@ -52,7 +52,6 @@ class Register extends React.Component {
 
   handleSubmit = async e => {
     e.preventDefault()
-    console.log('submitting', this.state.data)
     try {
       await axios.post('/api/register', this.state.data)
       this.props.history.push('/login')

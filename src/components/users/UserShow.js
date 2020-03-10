@@ -84,7 +84,6 @@ class UserShow extends React.Component {
   // submitReview = async () => {
   //   const review = this.props.match.params.id
   //   review.push(review)
-  //   console.log('checking')
   //   // this.setState({ user })
   // }
 
@@ -140,7 +139,6 @@ class UserShow extends React.Component {
         headers: { Authorization: `Bearer ${Auth.getToken()}` }
       })
       const isAccepted = res.data.offersAccepted.find(offer => offer.acceptedUser === Auth.getUser())
-      console.log(isAccepted)
       if (isAccepted) {
         this.setState({ accepted: true })
       }

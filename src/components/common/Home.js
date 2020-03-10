@@ -16,7 +16,6 @@ class Home extends React.Component {
   }
 
   handleClick = (e) => {
-    console.log(e.target.id)
     localStorage.setItem('skill', e.target.id)
   }
 

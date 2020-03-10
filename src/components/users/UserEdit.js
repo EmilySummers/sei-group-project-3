@@ -39,14 +39,13 @@ class UserEdit extends React.Component {
 
   async componentDidMount() {
     const UserId = this.props.match.params.id
-    // console.log(this.props.match.params.id)
     try {
       const res = await axios.get(`/api/chefs/${UserId}`, {
         headers: { Authorization: `Bearer ${Auth.getToken()}` }
       })
       this.setState({ data: res.data })
     } catch (err) {
-      console.log('something is wrong', err)
+      console.log(err)
     }
   }
 
@@ -63,7 +62,6 @@ class UserEdit extends React.Component {
 
   handleSubmit = async (e) => {
     e.preventDefault()
-    console.log(this.props.match.params.id)
     const userId = this.props.match.params.id
     try {
       await axios.put(`/api/chefs/${userId}`, this.state.data, {

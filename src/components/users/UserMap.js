@@ -84,9 +84,7 @@ class UserMap extends React.Component {
 
   render() {
     const { viewport, userswithco, userPicked, display } = this.state
-    console.log(userPicked)
     if (!userswithco.length) return null
-    console.log(userPicked)
     return (
       <section className="map">
         <MapGL

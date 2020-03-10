@@ -13,7 +13,6 @@ class Offers extends React.Component {
     }))
   }
   getAccepted = user => {
-    console.log(user)
     return (axios.get(`/api/chefs/${user.acceptedUser}`, {
       headers: { Authorization: `Bearer ${Auth.getToken()}` }
     }))
