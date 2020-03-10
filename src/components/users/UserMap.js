@@ -4,8 +4,9 @@ import axios from 'axios'
 import MapGL, { Marker, Popup } from 'react-map-gl'
 import Geocoder from 'react-map-gl-geocoder'
 import { Link } from 'react-router-dom'
+const { token } = require('../../../config/environment')
 
-const token = process.env.REACT_APP_MAPBOX
+// const token = process.env.REACT_APP_MAPBOX
 
 class UserMap extends React.Component {
   state = {
@@ -83,6 +84,7 @@ class UserMap extends React.Component {
 
 
   render() {
+    console.log(token)
     const { viewport, userswithco, userPicked, display } = this.state
     if (!userswithco.length) return null
     return (
