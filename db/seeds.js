@@ -26,7 +26,7 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true, useCr
           password: 'pass',
           passwordConfirmation: 'pass'
         }, {
-          name: 'North Kardashian ',
+          name: 'North Kardashian',
           email: 'north@email.com',
           image: 'https://res.cloudinary.com/dsa3peayb/image/upload/v1581675491/teaten_xlw652.jpg',
           skills: ['South-East Asian', 'Caribbean'],

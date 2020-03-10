@@ -34,7 +34,7 @@ class Navbar extends React.Component {
       <nav className="navbar nav is-transparent is-fixed-top">
         <div className="container">
           <div className="navbar-brand">
-            <img src="../assets/logo.png" alt="logo" />
+            <img src="https://res.cloudinary.com/dqrkw1z1a/image/upload/v1583863926/Chow%20Vow/logo_jraydj.png" alt="logo" />
             <Link className="navbar-item" to="/">
               <h1>Chow Vow</h1>
             </Link>

@@ -159,8 +159,8 @@ class UserShow extends React.Component {
     return (
       <section className="user-section">
         <div className="profilelayer">
-          <img className="profile-image img-seven" src="./../assets/background/strawberries.png"></img>
-          <img className="profile-image img-eight" src="./../assets/background/mexican.png"></img>
+          <img className="profile-image img-seven" src="https://res.cloudinary.com/dqrkw1z1a/image/upload/v1583863927/Chow%20Vow/Strawberries_cuvn1t.png"></img>
+          <img className="profile-image img-eight" src="https://res.cloudinary.com/dqrkw1z1a/image/upload/v1583863927/Chow%20Vow/mexican_mwggl6.png"></img>
         </div>
         <div className="user-container">
           <div className="user-info fadeInLeft">

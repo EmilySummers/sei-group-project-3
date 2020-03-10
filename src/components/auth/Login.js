@@ -33,10 +33,10 @@ class Login extends React.Component {
         <section className="loginsection"> 
           <div className="logincontainer">
             <div className="imagelayer">
-              <img className="floating-image img-one" src="./../assets/background/veggie.png"></img>
-              <img className="floating-image img-two" src="./../assets/background/gyoza.png"></img>
-              <img className="floating-image img-three" src="./../assets/background/steak.png"></img>
-              <img className="floating-image img-three" src="./../assets/background/pizza.png"></img>
+              <img className="floating-image img-one" src="https://res.cloudinary.com/dqrkw1z1a/image/upload/v1583863928/Chow%20Vow/veggie_qm9yqp.png"></img>
+              <img className="floating-image img-two" src="https://res.cloudinary.com/dqrkw1z1a/image/upload/v1583863925/Chow%20Vow/gyoza_kyiauw.png"></img>
+              <img className="floating-image img-three" src="https://res.cloudinary.com/dqrkw1z1a/image/upload/v1583863927/Chow%20Vow/steak_bk3jbq.png"></img>
+              <img className="floating-image img-three" src="https://res.cloudinary.com/dqrkw1z1a/image/upload/v1583863926/Chow%20Vow/pizza_irkqxb.png"></img>
             </div>
             <div className="logincolumns">
               <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter is-half-mobile has-text-centered">
