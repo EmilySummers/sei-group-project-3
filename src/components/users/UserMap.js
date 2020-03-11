@@ -5,7 +5,7 @@ import MapGL, { Marker, Popup } from 'react-map-gl'
 import Geocoder from 'react-map-gl-geocoder'
 import { Link } from 'react-router-dom'
 
-const token = process.env.MAPBOX_ACCESS_TOKEN
+// const token = 
 
 class UserMap extends React.Component {
   state = {
@@ -17,13 +17,14 @@ class UserMap extends React.Component {
       zoom: 12
     },
     display: false,
-    userPicked: {}
+    userPicked: {},
+    token: process.env.MAPBOX_ACCESS_TOKEN
   };
 
   myMap = React.createRef()
 
   getLatLng = postcode => {
-    return axios.get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${postcode}.json?access_token=${token}`)
+    return axios.get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${postcode}.json?access_token=${this.state.token}`)
   }
 
   findlatlong = async () => {
@@ -48,7 +49,7 @@ class UserMap extends React.Component {
   async componentDidMount() {
     try {
       const search = location.pathname.split('/').slice(2).join('/')
-      const mapStartFocus = await axios.get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${search}.json?access_token=${token}`)
+      const mapStartFocus = await axios.get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${search}.json?access_token=${this.state.token}`)
       if (mapStartFocus.data.features.length === 0) {
         this.props.history.push('/map/london')
         alert('Sorry we couldn\'t find that address')
@@ -83,8 +84,8 @@ class UserMap extends React.Component {
 
 
   render() {
-    console.log(token)
-    const { viewport, userswithco, userPicked, display } = this.state
+    console.log(this.state.token)
+    const { viewport, userswithco, userPicked, display, token } = this.state
     if (!userswithco.length) return null
     return (
       <section className="map">
