@@ -4,7 +4,7 @@
 
 This is a group project I built in collaboration with three other classmates during the General Assembly Software Engineering Immersive course (Week 9).
 
-## Team Mates
+## Teammates
 - Tim Banks: https://github.com/Tbanks9
 - James Darby: https://github.com/Darbjm
 - Tahirah A'sha: https://github.com/justteaco
@@ -61,7 +61,7 @@ When the user lands on the website they can login using the form, if they don't 
 #
 ### Profile
 
-Once a user is logged in, they will be taken to their profile page where they can read any reviews they have received, or make any changes to their profile if they wish. 
+Once a user is logged in, they will be taken to their profile page where they can read any reviews they have received or make any changes to their profile if they wish. 
 
 <img src="src/assets/readme-3.png" width=900>
 
@@ -107,11 +107,11 @@ If you are interested in exchanging skills with another user, you can simply cli
 
 As a team, we held an initial planning session to discuss what it was we wanted to build, plus all if the requirements to deliver our MVP. 
 
-1. We spent the first day offline, sharing ideas of what our visions were for the app and planning the structure of our week. We then created a trello board outlining our plan and ensuring the whole team knew what eachother were working on.
+1. We spent the first day offline, sharing ideas of what our visions were for the app and planning the structure of our week. We then created a Trello board outlining our plan and ensuring the whole team knew what each other were working on.
 2. After deciding on our idea and MVP, we planned our backend requirements and sketched some frontend designs, defining the user journey in the process.
 4. As a group we started implementing the backend, creating our models, views and controllers, testing as we built.
 5. Within 3 days, our backend was complete which allowed us to start on the frontend.
-6. The final few days were spent building the functionaility of the frontend, with the end of the week focussed more on usability and design.
+6. The final few days were spent building the functionality of the frontend, with the end of the week focussed more on usability and design.
 
 <img src="src/assets/readme-12.png" width=900>
 
@@ -141,7 +141,7 @@ Frontend:
 
 --- BACKEND ---
 
-I took the lead on developing the ratings feature, and started with the backend functionality. I created the below controller that allows one user to rate another user:
+I took the lead on developing the ratings feature and started with the backend functionality. I created the below controller that allows one user to rate another user:
 
 ```js
 function ratingCreate(req, res) {
@@ -207,7 +207,7 @@ async getData() {
 
 - In the initial stages of planning, we knew that we wanted some way for the users to connect with each other. We considered implementing a live chat feature, but because of the timescale we decided to build an offer feature instead. This feature was one of the more complex components and getting it to communicate between different users was a challenge for the whole team. Being able to complete this feature, and have it running smoothy, was a huge win for us as a team.
 
-- When starting the project, I didn't completely understand virtual schemas or how they might be used, but when I began building the ratings feature it soon became apparent that I needed a way to store an overall user rating (calculated from the avergage of all ratings) within the user model. After doing some research, I discovered that a virtual schema would be the perfect tool to store this data. Being able to build this feature successfully and gain a better understanding of virtual schemas was a huge personal win for me.
+- When starting the project, I didn't completely understand virtual schemas or how they might be used, but when I began building the ratings feature it soon became apparent that I needed a way to store an overall user rating (calculated from the average of all ratings) within the user model. After doing some research, I discovered that a virtual schema would be the perfect tool to store this data. Being able to build this feature successfully and gain a better understanding of virtual schemas was a huge personal win for me.
 
 - Something we all learnt from this project was the importance of thorough planning at the start, and throughout, the project. Sometimes it is tempting to get straight into coding, especially when you are excited about your idea, but taking the time to plan every aspect of the app and allocate time to build each part proved vital to the success of our team.
 
@@ -215,9 +215,9 @@ async getData() {
 
 - This was my first time using git as a version-control system within a group and we encountered quite a few merge conflicts. We learnt that dealing with these issues could sometimes be time-consuming but could be avoided with proper communication within the group.
 
-- One future improvement would be to implement reviews & ratings on a user basis, as it is currently anonymous as well as allow users to edit and delete their reviews. We would also have liked to have each rating linked to it's corresponding review, which would involve merging the two schemas in the user model.
+- One future improvement would be to implement reviews & ratings on a user basis, as it is currently anonymous as well as allow users to edit and delete their reviews. We would also have liked to have each rating linked to its corresponding review, which would involve merging the two schemas in the user model.
 
-- Another element that would have been nice to add is a 'Recipes' feature. This would allow users to showcase their favourite recipes on their profile, as well as allow users to exchange recipes with eachother.
+- Another element that would have been nice to add is a 'Recipes' feature. This would allow users to showcase their favourite recipes on their profile, as well as allow users to exchange recipes with each other.
 
 
 
