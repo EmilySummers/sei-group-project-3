@@ -53,7 +53,11 @@ Check the console for any issues, and if there are any, check the package.json f
 
 ### Login & Register
 
-When the user lands on the website they can login using the form, if they don't have an account they can click on the 'Sign Up' link which redirects them to the register page. 
+When the user lands on the website they can login using the form, if they don't have an account they can click on the 'Sign Up' link which redirects them to the register page.
+
+**Sample login details**  
+Email: ben@email.com  
+Password: pass
 
 <img src="src/assets/readme-1.png" width=900>
 <img src="src/assets/readme-2.png" width=900>
